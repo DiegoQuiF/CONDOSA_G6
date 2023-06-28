@@ -10,4 +10,5 @@ def init_app():
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
     app.register_blueprint(index.main, url_prefix='/')
+    
     return app
